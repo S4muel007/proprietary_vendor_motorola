@@ -236,10 +236,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/dynamic_common/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml \
     vendor/motorola/dynamic_common/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml \
     vendor/motorola/dynamic_common/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml \
-    vendor/motorola/dynamic_common/proprietary/product/etc/permissions/deviceowner-configuration-com.motorola.camera2.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/deviceowner-configuration-com.motorola.camera2.xml \
     vendor/motorola/dynamic_common/proprietary/product/etc/permissions/embms-noship_product_privapp_permissions_qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/embms-noship_product_privapp_permissions_qti.xml \
     vendor/motorola/dynamic_common/proprietary/product/etc/permissions/embms.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/embms.xml \
-    vendor/motorola/dynamic_common/proprietary/product/etc/permissions/privapp-permissions-com.motorola.camera2.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-com.motorola.camera2.xml \
     vendor/motorola/dynamic_common/proprietary/product/etc/permissions/privapp-permissions-com.motorola.moto.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-com.motorola.moto.xml \
     vendor/motorola/dynamic_common/proprietary/product/etc/permissions/privapp-permissions-com.qualcomm.atfwd.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-com.qualcomm.atfwd.xml \
     vendor/motorola/dynamic_common/proprietary/product/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/qcrilhook.xml \
@@ -425,14 +423,9 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/dynamic_common/proprietary/product/lib64/vendor.qti.imsrtpservice@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.imsrtpservice@2.0.so \
     vendor/motorola/dynamic_common/proprietary/product/lib64/vendor.qti.imsrtpservice@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.imsrtpservice@2.1.so \
     vendor/motorola/dynamic_common/proprietary/product/lib64/vendor.qti.latency@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.latency@2.0.so \
-    vendor/motorola/dynamic_common/proprietary/lib64/libfm-hci.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libfm-hci.so \
-    vendor/motorola/dynamic_common/proprietary/lib64/fm_helium.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/fm_helium.so
 
 PRODUCT_PACKAGES += \
-    MotoSignatureApp \
     DynamicDDSService \
-    FMRadioService \
-    FMPlayer \
     QtiTelephonyService \
     datastatusnotification \
     embms \
@@ -444,7 +437,6 @@ PRODUCT_PACKAGES += \
     QPerformance \
     UxPerformance \
     com.motorola.frameworks.core.addon \
-    com.motorola.motosignature \
     com.qti.snapdragon.sdk.display \
     qcom-moto-telephony-ext \
     QtiTelephonyServicelibrary \
@@ -469,6 +461,5 @@ PRODUCT_PACKAGES += \
     vendor.qti.latency-V2.0-java \
     vendor.qti.voiceprint-V1.0-java \
     moto-ims-ext \
-    moto-settings \
     moto-telephony \
     qcom-moto-ims-ext
